@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Online Tachistoscope (v5)</title>
+  <!-- v5: now also works with video -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="res/tachistoskop.css">
+</head>
+
+<body>
+  <div class="va-img-holder">
+    <div class="va-img-holder__shutter"></div>
+    <img class="va-img-holder__image" src="res/placeholder.jpg" alt="the image to be analysed">
+    <video class="va-img-holder__image" autoplay loop></video>
+  </div>
+
+  <form>
+    <input type="file" class="va-fileinput" data-multiple-caption="{count} files selected" placeholder="res/placeholder.jpg">
+  </form>
+
+  <nav class="va-menu">
+    <button class="va-button-show-image">Show</button>
+    <span>&nbsp;for&nbsp;</span>
+    <input class="va-input-shutterspeed" id="va-input-shutterspeed" type="text" value="25"><label class="va-input-shutterspeed__label" for="va-input-shutterspeed">ms</label>
+    <button class="va-button-reveal-image">Reveal Image [!]</button>
+  </nav>
+
+  <script src="res/jquery-3.3.1.min.js"></script>
+  <script src="res/tachistoskop.js"></script>
+</body>
+
+</html>

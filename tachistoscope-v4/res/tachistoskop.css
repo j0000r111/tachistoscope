@@ -1,0 +1,85 @@
+body, html {
+  background: #555;
+  font-family: "Courier New", Courier, monospace;
+  height: 100%;
+  margin: 0;
+}
+
+.va-fileinput {
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  z-index: 33;
+}
+
+.va-img-holder {
+  height: 100%;
+  position: relative;
+}
+
+.va-img-holder__shutter {
+  background: #000 url("kreis400px.png") center no-repeat;
+  color: grey;
+  line-height: 100vh;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 22;
+}
+
+/* adapt size of shutter image (the "o") to small screeens */
+@media(max-width:500px) {
+  .va-img-holder__shutter {
+    background-size: 75%;
+  }
+}
+
+.va-img-holder img {
+  /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* suppresses tooltip */
+  pointer-events: none;
+  z-index: 11;
+}
+
+.va-menu {
+  align-items: center;
+  bottom: 10px;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  z-index: 33;
+}
+
+.va-menu>* {
+  background: transparent;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.va-button-show-image {
+  cursor: pointer;
+}
+
+.va-input-shutterspeed {
+  border: 1px solid transparent;
+  border-bottom: 1px solid white;
+  width: 66px;
+}
+
+.va-button-reveal-image {
+  border: none;
+  color: #999;
+  cursor: pointer;
+  margin-left: 10px;
+}
