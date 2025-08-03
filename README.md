@@ -4,4 +4,4 @@ This one is for classroom use. It runs offline in a browser.
 
 demo:
 
-https://graffik.de/psst/hmkw/visualanalysis/tachistoscope/
+https://graffik.de/research/visualanalysis/tachistoscope/
